@@ -1,0 +1,301 @@
+/* GENERAL SETTINGS */
+* { padding: 0; 
+    margin: 0; 
+    font-family: 'Baloo 2', cursive; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-weight: 500;
+}
+body {
+    background: #cef;
+    overflow-x: hidden;
+}
+#header input[type="checkbox"] {display: none;}
+a {text-decoration: none; color: inherit}
+section {
+    margin-top: 16px;
+    padding: 54px 32px 16px;
+}
+h1, h2, h3{
+    text-align: center;
+    color:#023;
+    text-shadow: 1px 1px #e80, -1px -1px #e80,
+                 1px -1px #e80, -1px 1px #e80;
+}
+b {
+    font-weight: 800;
+}
+
+/* NAVIGATION BAR */
+#nav-bar {
+    width: 100%;
+    height: 54px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: #cef;
+    font-size: 18px;
+    background: #023;
+    font-weight: 600;
+}
+#nav-head {
+    display: flex;
+    justify-content: space-between;
+}
+#nav-head  a {
+    width: 30%;
+    padding: 0 16px;
+    line-height: 54px;
+}
+#nav-head label {
+    padding: 16px 16px 0;
+}
+#nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    opacity: 0;
+    transition: all 0.2s;
+}
+#nav-menu a {
+    width: 100%;
+    background: rgba(0,34,51,0.7);
+    backdrop-filter: blur(5px);
+    padding: 0 16px;
+    line-height: 66px;
+}
+#nav-bar input:checked ~ #nav-menu {
+    opacity: 1;
+}
+#nav-bar a:hover, #nav-bar label:hover {
+    background: #cef;
+    color: #023
+}
+#features h2, #how-it-works h2 {
+    letter-spacing: 5px;
+}
+@media (min-width: 600px) {
+    #nav-head label {display: none}
+    #nav-head {width: 40%}
+    #nav-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav-menu {
+        opacity: 1;
+        flex-direction: row;
+        width: 60%;
+    }
+    #nav-menu a {
+        line-height: 54px;
+        text-align: center;
+    }
+}
+
+/* HEADER */
+#header {
+    padding-top: 54px;
+    width: 100%;
+    height: 62vh;
+    max-height: 640px;
+    background: url("/images/land-img.jpg") left bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,.75);
+    border: 3px outset #cef;
+    border-radius: 2px;
+    padding: 4px 8px;
+}
+
+#header-img {
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+    filter:drop-shadow(0 0 2px #023);
+}
+#form-box {
+    width: 80%;
+    background: rgba(0,34,51,0.7);
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+    border: 3px ridge rgba(0,34,51,0.7);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+#form-box h2 {
+    width: 100%;
+    text-align: center;
+    padding: 8px 16px;
+}
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#name, #email {
+    margin: 4px 8px;
+    width: 200px;
+    height: auto;
+}
+#submit {
+    width: 120px;
+    background: #e80;
+    color:#023;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+@media (max-width: 360px) {
+    h1, #form-box h2 {
+        font-size: 20px;
+    }
+}
+
+/* Features */
+#features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #356;
+}
+#features h2 {
+    width: 100%
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding-top: 16px;
+}
+#materials {
+    background: url("/images/flame.jpg") center;
+}
+#shipping {
+    background: url("/images/fast-traffic.jpg");
+}
+#quality {
+    background: url("/images/test.jpg");
+}
+#materials, #shipping, #quality {
+    background-size: cover;
+}
+.picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.shadow {
+    box-shadow: 5px 5px 5px #023, -5px -5px 5px #023,
+                5px -5px 5px #023, -5px 5px 5px #023;
+}
+.description {
+    margin-top: 8px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    margin-bottom: 16px;
+}
+.description h3 {
+    padding: 8px 0;
+}
+
+/* How it works */
+#how-it-works {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 8px 16px;
+}
+.intro {
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 8px;
+    padding: 0 8px;
+}
+iframe {
+    width: 95%;
+    max-width: 480px;
+    margin: 8px 0 16px;
+}
+
+/* Pricing */
+#pricing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: #356;
+}
+#pricing h2 {
+    width: 100%
+}
+#tenor {
+    background: url("/images/Tenor_trombone_480x152.tif.jpg") center;
+}
+#bass {
+    background: url("/images/Bass_trombone_480x152.tif.jpg");
+}
+#valve {
+    background: url("/images/Valve_trombone_480x152.tif.jpg");
+}
+#tenor, #bass, #valve {
+    background-size: cover;
+}
+.photo {
+    width: 225px;
+    height: 76px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+/* Footer */
+footer {
+    margin-top: 16px;
+    padding: 8px 16px;
+    background: #e80;
+    color: #023;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#note {
+    font-size: 12px;
+}
+#social-media {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+#social-media div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#info {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+}
+footer a{
+    font-weight: 800;
+}
