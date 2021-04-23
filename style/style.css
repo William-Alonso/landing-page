@@ -101,7 +101,7 @@ b {
     height: 62vh;
     max-height: 640px;
     /*https://raw.githubusercontent.com/William-Alonso/landing-page/main/images/land-img.jpg*/
-    background: url("/images/land-img.jpg") left bottom;
+    background: url("main/images/land-img.jpg") left bottom;
     background-size: cover;
     display: flex;
     flex-direction: column;
