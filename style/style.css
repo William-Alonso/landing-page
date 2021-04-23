@@ -100,7 +100,7 @@ b {
     width: 100%;
     height: 62vh;
     max-height: 640px;
-    background: url("images/land-img.jpg") left bottom;
+    background: url("/images/land-img.jpg") left bottom;
     background-size: cover;
     display: flex;
     flex-direction: column;
