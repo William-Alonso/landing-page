@@ -100,7 +100,7 @@ b {
     width: 100%;
     height: 62vh;
     max-height: 640px;
-    background: url("/images/land-img.jpg") left bottom;
+    background: url("images/land-img.jpg") left bottom;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -184,13 +184,13 @@ b {
     padding-top: 16px;
 }
 #materials {
-    background: url("/images/flame.jpg") center;
+    background: url("images/flame.jpg") center;
 }
 #shipping {
-    background: url("/images/fast-traffic.jpg");
+    background: url("images/fast-traffic.jpg");
 }
 #quality {
-    background: url("/images/test.jpg");
+    background: url("images/test.jpg");
 }
 #materials, #shipping, #quality {
     background-size: cover;
@@ -247,13 +247,13 @@ iframe {
     width: 100%
 }
 #tenor {
-    background: url("/images/Tenor_trombone_480x152.tif.jpg") center;
+    background: url("images/Tenor_trombone_480x152.tif.jpg") center;
 }
 #bass {
-    background: url("/images/Bass_trombone_480x152.tif.jpg");
+    background: url("images/Bass_trombone_480x152.tif.jpg");
 }
 #valve {
-    background: url("/images/Valve_trombone_480x152.tif.jpg");
+    background: url("images/Valve_trombone_480x152.tif.jpg");
 }
 #tenor, #bass, #valve {
     background-size: cover;
