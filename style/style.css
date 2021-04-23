@@ -100,7 +100,8 @@ b {
     width: 100%;
     height: 62vh;
     max-height: 640px;
-    background: url("https://raw.githubusercontent.com/William-Alonso/landing-page/main/images/land-img.jpg") left bottom;
+    /*https://raw.githubusercontent.com/William-Alonso/landing-page/main/images/land-img.jpg*/
+    background: url("/images/land-img.jpg") left bottom;
     background-size: cover;
     display: flex;
     flex-direction: column;
